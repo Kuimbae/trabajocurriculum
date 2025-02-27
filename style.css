@@ -34,7 +34,7 @@ header h1 {
   display: inline-block; 
 }
 
-header p {
+header {
   font-size: 14px;
   margin-top: 15px;
 }
@@ -74,16 +74,16 @@ header a:hover {
   background: #ccc;
   flex-shrink: 0;
   transform: rotate(-5deg); /* Rota solo la imagen */
-  transition: transform 0.3s; /
+  transition: transform 0.3s;
 }
 
 #pic img {
   width: 100%;  /* Cambiado a 100% para que la imagen ocupe todo el contenedor */
-  height: 100%; /* Cambiado a 100% para que la imagen ocupe todo el contenedor */
+  height: auto; /* Cambiado a 100% para que la imagen ocupe todo el contenedor */
+  max-height: 100%; /* Asegura que la imagen no se desborde */
   object-fit: cover;  /* Mantiene la proporción y centra la imagen */
   object-position: center;
-  
-  
+    
 }
 
 /*  Objetivo (frase descriptiva) */
@@ -91,7 +91,7 @@ header a:hover {
   font-style: italic;
   margin-top: 10px;
   color: #ddd;
-  max-width: 80%;
+  max-width: 100%;
 }
 
 /*  Contenido principal */
@@ -164,10 +164,18 @@ dd div {
   header {
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+  }
+
+  .parrafo {
+    text-align: center;
   }
 
   #pic {
-    margin-top: 10px;
+    width: 25%; /* Ajusta el ancho para pantallas pequeñas */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin: 0 auto;    
+    
   }
 
   dl {
