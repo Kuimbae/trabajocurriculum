@@ -68,7 +68,7 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 10px solid white; /* Mantiene el borde grueso */
+  border: 5px solid white; /* Mantiene el borde grueso */
   border-radius: 5px;
   overflow: hidden;
   background: #ccc;
@@ -92,6 +92,7 @@ header a:hover {
   margin-top: 10px;
   color: #ddd;
   max-width: 100%;
+  margin-block-end: 10px;
 }
 
 /*  Contenido principal */
