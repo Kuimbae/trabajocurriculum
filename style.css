@@ -14,7 +14,7 @@ body {
   padding: 10px;
 }
 
-/* 🔹 Estilo del HEADER */
+/*  Estilo del HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -61,7 +61,7 @@ header a:hover {
   color: #636160;            /* Cambia el color a un tono naranja (puedes elegir cualquier color que te guste) */
 }
 
-/* 🔹 Imagen de perfil */
+/*  Imagen de perfil */
 #pic {
   width: 180px;  /* Hacemos el contenedor más ancho */
   height: 180px; /* Igualamos el alto */
@@ -86,7 +86,7 @@ header a:hover {
   
 }
 
-/* 🔹 Objetivo (frase descriptiva) */
+/*  Objetivo (frase descriptiva) */
 #objective {
   font-style: italic;
   margin-top: 10px;
@@ -94,7 +94,7 @@ header a:hover {
   max-width: 80%;
 }
 
-/* 🔹 Contenido principal */
+/*  Contenido principal */
 main {
   background: white;
   padding: 20px;
@@ -155,7 +155,7 @@ dd div {
   margin-bottom: 15px; /* Añadir espacio entre experiencias */
 }
   
-/* 🔹 Responsividad */
+/*  Responsividad */
 @media (max-width: 600px) {
   body {
     padding: 10px;
