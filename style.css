@@ -1,28 +1,183 @@
+/* Reset de márgenes y padding */
 * {
   margin: 0;
   padding: 0;
-}
-body {
-  font: 16px Helvetica, Sans-Serif;
-  line-height: 24px;
-  width: 800px;
-  margin: 40px auto 60px;
+  
 }
 
+/* Estilos generales del body */
+body {
+  font: 16px; Open, sans-serif;
+  line-height: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+/* 🔹 Estilo del HEADER */
 header {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3a3a3a;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #8a8989;
+  padding-bottom: 10px;
+  display: inline-block; 
+}
+
+header p {
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+header a {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+.email-link {
+  font-style: italic;
+  opacity: 0.5;
+  color: #eee9e2;
+}
+
+.custom-style {
+  font-style: italic;        /* Aplica cursiva */
+  opacity: 0.5;              /* Aplica transparencia (50%) */
+  color: #636160;            /* Cambia el color a un tono naranja (puedes elegir cualquier color que te guste) */
+}
+
+/* 🔹 Imagen de perfil */
+#pic {
+  width: 180px;  /* Hacemos el contenedor más ancho */
+  height: 180px; /* Igualamos el alto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid white; /* Mantiene el borde grueso */
+  border-radius: 5px;
+  overflow: hidden;
+  background: #ccc;
+  flex-shrink: 0;
+  transform: rotate(-5deg); /* Rota solo la imagen */
+  transition: transform 0.3s; /
+}
+
+#pic img {
+  width: 100%;  /* Cambiado a 100% para que la imagen ocupe todo el contenedor */
+  height: 100%; /* Cambiado a 100% para que la imagen ocupe todo el contenedor */
+  object-fit: cover;  /* Mantiene la proporción y centra la imagen */
+  object-position: center;
+  
+  
+}
+
+/* 🔹 Objetivo (frase descriptiva) */
+#objective {
+  font-style: italic;
+  margin-top: 10px;
+  color: #ddd;
+  max-width: 80%;
+}
+
+/* 🔹 Contenido principal */
+main {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 dl {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 150px 1fr;
   grid-gap: 1rem;
+  align-items: right;
+  /* text-align: right; */
+  
 }
 
-#pic {
-  width: 200px;
-  height: 250px;
-  border: 1px solid #999;
-  padding: 1rem;
+/* 🔹 Títulos de las secciones */
+dt {
+  font-weight: bold;
+  font-style: italic;
+  color: #d2691e;
+  font-size: 18px;  
+  margin-top: 10px;  
+  border-right: 3px solid orange;
+  
 }
+
+/* 🔹 Contenido de cada sección */
+dd {
+  margin-bottom: 15px;
+  margin-top: 10px;  
+  margin-left: 15px;
+}
+
+/* 🔹 Subtítulos */
+dd h2 {
+  color: #d2691e;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  margin-top: 1px;
+}
+
+/* 🔹 Líneas separadoras */
+dd p,
+dd ul {
+  margin-top: 15px;
+  margin-block-end: 15px;
+  margin-left: 20px;
+  color: #333;  
+}
+
+ul {
+  margin-left: 0px;
+}
+ 
+
+dd div {
+  margin-bottom: 15px; /* Añadir espacio entre experiencias */
+}
+  
+/* 🔹 Responsividad */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #pic {
+    margin-top: 10px;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+
+  dt {
+    border-right: none;
+    border-block-end: 3px solid orange;
+  }
+
+}
+
